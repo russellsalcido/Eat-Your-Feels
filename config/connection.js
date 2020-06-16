@@ -9,6 +9,10 @@ var connection = mysql.createConnection({
   database: "feel_db"
 });
 
+if(process.env.JAWSDB_URL) {
+  connection = mysql.createConnetion(process.env.JAWSDB_URL);
+}
+
 // Make connection.
 connection.connect(function(err) {
   if (err) {
