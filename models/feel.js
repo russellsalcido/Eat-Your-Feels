@@ -1,5 +1,5 @@
 // Import the ORM to create functions that will interact with the database.
-var orm = require("../config/orm");
+var orm = require("../config/orm.js");
 
 var feel = {
   all: function(cb) {
@@ -17,13 +17,8 @@ var feel = {
     orm.update("feels", objColVals, condition, function(res) {
       cb(res);
     });
-  },
-  delete: function(condition, cb) {
-    orm.delete("feels", condition, function(res) {
-      cb(res);
-    });
   }
 };
 
-// Export the database functions for the controller (catsController.js).
+// Export the database functions for the controller (feelsController.js).
 module.exports = feel;

@@ -1,12 +1,12 @@
 ### Schema
 
-CREATE DATABASE feels_db;
-USE feels_db;
+CREATE DATABASE feel_db;
+USE feel_db;
 
 CREATE TABLE feels
 (
 	id int NOT NULL AUTO_INCREMENT,
-	name varchar(255) NOT NULL,
-	down BOOLEAN DEFAULT false,
+	name varchar(500) NOT NULL,
+	downs BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
