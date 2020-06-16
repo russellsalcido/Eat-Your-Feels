@@ -38,6 +38,7 @@ h4 {
 	margin: 0;
 	background-color: transparent;
 	text-align: center;
+	min-height: 400px;
 }
 
 #big-box {
